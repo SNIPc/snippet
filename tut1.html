@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/icon.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <title>Code Snippets</title>
+    <link rel="stylesheet" href="prism.css">
+    <link rel="stylesheet" href="Dark.css">
+  <script src="prism.js"></script>
+    <script src="Script.js"></script>
+</head>
+<style type="text/css" media="all">
+    /*footer*/
+.col_white_amrc { color:#FFF;
+}
+footer {
+ width:100%; background-color:#263238; min-height:250px; 
+  padding:10px 0px 25px 0px ;
+  
+}
+.pt2 {
+  padding-top:40px ; margin-bottom:20px ;
+  
+}
+footer p {
+  font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;
+  
+}
+.mb10 { 
+  padding-bottom:15px ;
+  
+}
+.footer_ul_amrc { 
+  margin:0px ; list-style-type:none ; font-size:14px; padding:0px 0px 10px 0px ; 
+  text-decoration: none;
+}
+.footer_ul_amrc li {
+  padding:0px 0px 5px 0px;
+  
+  
+}
+.footer_ul_amrc li a{ 
+  color: #C8D6FF;
+  
+}
+.footer_ul_amrc li a:hover{ 
+  color: #27FFD5 ; 
+  
+}
+.fleft { 
+  float:left;
+  
+}
+.padding-right { padding-right:10px; }
+
+.footer_ul2_amrc {margin:0px; list-style-type:none; padding:0px;
+  
+}
+.footer_ul2_amrc li p { display:table; }
+.footer_ul2_amrc li a:hover { text-decoration:none;}
+.footer_ul2_amrc li i { margin-top:5px;}
+
+.bottom_border { border-bottom:1px solid #323f45; padding-bottom:20px;}
+.foote_bottom_ul_amrc {
+	list-style-type:none;
+	padding:0px;
+	display:table;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+	
+}
+.foote_bottom_ul_amrc li { display:inline;
+}
+.foote_bottom_ul_amrc li a { color:#999; margin:0 12px;}
+
+.social_footer_ul { display:table; margin:15px auto 0 auto; list-style-type:none;  }
+.social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }
+.social_footer_ul li a { color:#CCC; border:1px solid #CCC; padding:8px;border-radius:50%;}
+.social_footer_ul li i {  width:20px; height:20px; text-align:center;}
+/*footer end*/
+  table {
+    border-collapse: collapse;
+
+  }
+
+  thead th {
+    border: 0.2px solid #9D9D9D;
+  }
+
+  table,
+  td {
+    border: 0.2px solid #9F9FA7;
+  }
+
+  .dark {
+
+    background-color: #E9E9E9;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  /*CSS table oprator and operations*/
+  .table2 {
+    border-collapse: collapse;
+    border: 0.5px solid #B8B9BF;
+
+
+  }
+
+  td {
+    border-bottom: 1px solid #9E9E9E;
+  }
+
+  .dark2 {
+
+    background-color: #F2F4FF;
+  }
+
+  .tdeta {
+    border: 0.6px solid #BFBFBF;
+    border-radius: 4px;
+  }
+
+  .code {
+    background: #000000;
+    color: #E7EDFF;
+  }
+
+  .themdl {
+    background: #FBFBFF;
+    border: 1px solid #B7B7B7;
+    height: 85px;
+    border-radius: 5px;
+    justify-content: center;
+    font-size: 1.3em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-left-color: #5F6CFC;
+    border-left-width: 7px;
+
+  }
+
+  .imphead {
+    color: #565656;
+    font-size: 1.5em;
+    font-weight: bolder;
+  }
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> Code Snippet</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="/snippet/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/snippet/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Snippets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/snippet/contact.html">Contact</a>
+          </li>
+        </ul>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--botton modal-->
+  <!-- Button trigger modal -->
+  <div class="container mt-4">
+   <h2>Getting Started with C++</h2><br>
+    <h3>Variables, Data-types & Type Modifiers</h3>
+    <ul type="circle">
+      <li><b>Variables</b></li>
+      <p>A variable is a container (storage area) used to hold data.
+        Each variable should be given a unique name (identifier).</p>
+      <p>For Example:</p>
+      <pre>int a = 2;  // a is assigned 2.</pre>
+      <p>Here a is the variable name that holds the integer value 2.
+        The value of a can be changed, hence the name variable.</p>
+    </ul>
+    <p>There are certain rules for naming a variable in C++</p>
+    <ol>
+      <li> Can only have alphabets, numbers and underscore.</li>
+      <li> Cannot begin with a number.</li>
+      <li> Cannot begin with an uppercase character.</li>
+      <li> Cannot be a keyword defined in C++ language (like int is a keyword).</li>
+    </ol>
+    <ul type="circle">
+      <li><b> Data Types in C++</b></li>
+      <p>Data types are declarations for variables. This determines the type and size of
+        data associated with variables which is essential to know since different data
+        types occupy different size of memory.</p>
+    </ul>
+    <p>Primarily there are three types of data-types in c++</p>
+    <ol type="I">
+      <li>Primitive Data-Types</li>
+      <li>Derived Data-Types</li>
+      <li>User Defined Data-types</li>
+    </ol>
+    <big>Primitive Data-Types</big>
+    <p>These data types are built-in or predefined data types and can be used directly by the user to declare variables.</p>
+    <p> example: int, char , float, bool etc.</p>
+    <p>Primitive data types available in C++ are: </p>
+    <ol>
+      <b>
+        <li>int</li>
+        <ul>
+      </b>
+      <li> This data type is used to store integers.</li>
+      <li> It occupies 4 bytes in memory</li>
+      <li> It can store values from -2147483648 to 2147483647.
+        <br>Eg. int age = 18</li>
+      </ul>
+      <b>
+        <li>float & double</li>
+        <ul>
+      </b>
+      <li>Used to store floating-point numbers (decimals and exponentials)</li>
+      <li> Size of float is 4 bytes and size of double is 8 bytes.</li>
+      <li> Float is used to store upto 7 decimal digits whereas double is used
+        to store upto 15 decimal digits.
+        <p>Eg. float pi = 3.14</p>
+        <p>double distance = 24E8 // 24 x 108</p>
+      </li>
+      </ul>
+      <b>
+        <li>char</li>
+      </b>
+      <ul>
+        <li>This data type is used to store characters.</li>
+        <li>It occupies 1 byte in memory.</li>
+        <li>Characters in C++ are enclosed inside single quotes'',</li>
+        <li>ASCII code is used to store characters in memory.
+          <p>eg : char ch = 'a';</p>
+        </li>
+      </ul>
+      <b>
+        <li>bool</li>
+      </b>
+      <ul>
+        <li>This data type has only 2 values ʹ true and false. </li>
+        <li> It occupies 1 byte in memory.</li>
+        <li>True is represented as 1 and false as 0.<p>Eg. bool flag = false</p>
+        </li>
+      </ul>
+    </ol>
+    <table class="table">
+      <thead class="thead-dark">
+        <thead>
+          <tr>
+            <th>Data Types</th>
+            <th>Meaning</th>
+            <th>Size (in bytes)</th>
+          </tr>
+        </thead>
+      <tbody>
+        <tr>
+          <td>int</td>
+          <td> Integer </td>
+          <td>4 bytes</td>
+        </tr>
+        <tr class="dark">
+          <td>float</td>
+          <td>Floating-point</td>
+          <td>4 bytes </td>
+        </tr>
+        <tr>
+          <td>double</td>
+          <td>Double Floating-point</td>
+          <td>8 bytes</td>
+        </tr>
+        <tr class="dark">
+          <td>char</td>
+          <td> Character </td>
+          <td> 1 bytes</td>
+        </tr>
+        <tr>
+          <td>wchar_t</td>
+          <td> Wide Character </td>
+          <td>2 bytes </td>
+        </tr>
+        <tr class="dark">
+          <td>bool</td>
+          <td>Booleans</td>
+          <td>1 bytes</td>
+        </tr>
+        <tr>
+          <td>void</td>
+          <td>Empty</td>
+          <td>0 bytes</td>
+        </tr>
+      </tbody>
+    </table> <br>
+    <big>Derived Data Types</big>
+    <p>These are the data types that are derived from fundamental (or built-in) data
+      types. For example, arrays, pointers, function, reference.
+    </p>
+    <big>User-Defined Data Types</big>
+    <p>These are the data types that are defined by user itself.
+      For example, class, structure, union, enumeration, etc.</p>
+    <ul>
+      <b>
+        <li>C++ Type Modifiers</li>
+      </b>
+    </ul>
+    <p>Type modifiers are used to modify the fundamental data types.</p>
+    <table class="table">
+      <thead class="thead-dark">
+        <thead>
+          <tr>
+            <th>Data Types</th>
+            <th>Size (in bytes)</th>
+            <th>Meaning</th>
+          </tr>
+        </thead>
+      <tbody>
+        <tr>
+          <td>signed int</td>
+          <td> 4 </td>
+          <td>used for integers (equivalent to int)</td>
+        </tr>
+        <tr class="dark">
+          <td>unsigned int</td>
+          <td>4</td>
+          <td>can only store positive integers </td>
+        </tr>
+        <tr>
+          <td>short</td>
+          <td>2</td>
+          <td>used for small integers (range -32768 to 32767)</td>
+        </tr>
+        <tr class="dark">
+          <td>long</td>
+          <td>at least 4 </td>
+          <td>used for large integers (equivalent to long int)</td>
+        </tr>
+        <tr>
+          <td>long long int</td>
+          <td>8 </td>
+          <td>used for very large integers (equivalent to long
+            long int). </td>
+        </tr>
+        <tr class="dark">
+          <td>unsigned long
+            long</td>
+          <td>8</td>
+          <td>used for very large positive integers or 0
+            (equivalent to unsigned long long int)</td>
+        </tr>
+        <tr>
+          <td>long double</td>
+          <td>8</td>
+          <td>used for large floating-point numbers </td>
+        </tr>
+        <tr class="dark">
+          <td>signed char</td>
+          <td>1</td>
+          <td>used for characters (guaranteed range -127 to
+            127) </td>
+        </tr>
+        <tr>
+          <td>unsigned char</td>
+          <td>1</td>
+          <td>used for characters (range 0 to 255)</td>
+        </tr>
+      </tbody>
+    </table>
+    <!--<p>We will be studying the derived and user-defined data types in detail in the 
+further video lectures.</p>-->
+    <br><br>
+    <figure class="figure">
+      <img src="https://1.bp.blogspot.com/-lKyfFi7ifDQ/YOlp2iGInrI/AAAAAAAADyw/Co5ed93mQgQ807VcjSzSn5nFE3wki8PegCLcBGAsYHQ/s1918/Screenshot_20210710-134023%257E2.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+      <figcaption class="figure-caption">overview on the data types.</figcaption>
+    </figure>
+    <br>
+    <hr><br>
+    <h3>Out first C++ program.</h3>
+    <pre class="language-c++"><code>// Hello world program in C++
+#include&lt;iostream&gt;
+
+using namespace std;
+int main()
+{
+ cout << "Hello World!\n";
+ return 0;
+}</code></pre><br><br>
+    <p><b>basic structure of the program</b></p>
+    <ol>
+      <b>
+        <li>#include&lt;iostream&gt;</li>
+      </b>
+      <p>#include is the pre-processor directive that is used to include files in our
+        program. Here we are including the iostream standard file which is
+        necessary for the declarations of basic standard input/output library in
+        C++.</p>
+      <b>
+        <li>Using namespace std</li>
+      </b>
+      <p>All elements of the standard C++ library are declared within namespace.
+        Here we are using std namespace.</p>
+      <b>
+        <li> int main()</li>
+      </b>
+      <p>The execution of any C++ program starts with the main function, hence it
+        is necessary to have a main function in your program. ‘int’ is the return
+        value of this function.</p><b>
+        <li>{}</li>
+      </b>
+      <p>The curly brackets are used to indicate the starting and ending point of
+        any function. Every opening bracket should have a corresponding closing
+        bracket.</p><b>
+        <li>cout<<”Hello World!\n”;</li>
+      </b>
+      <p>This is a C++ statement. cout represents the standard output stream in
+        C++. It is declared in the iostream standard file within the std namespace.
+        The text between quotations will be printed on the screen.
+        \n will not be printed, it is used to add line break.
+        Each statement in C++ ends with a semicolon (;)</p>
+      <b>
+        <li>return 0;</li>
+      </b>
+      <p>return signifies the end of a function. Here the function is main, so when
+        we hit return 0, it exits the program. We are returning 0 because we
+        mentioned the return type of main function as integer (int main). A zero
+        indicates that everything went fine and a one indicates that something
+        has gone wrong.</p>
+      <b>
+        <li>Comments In C++</li>
+      </b>
+      <p>The two slash(//) signs are used to add comments in a program. It does
+        not have any effect on the behaviour or outcome of the program. It is
+        used to give description of the program you’re writing.</p>
+      <br>
+      <hr><br><br>
+    </ol>
+    <h2>Input and Output in C++</h2>
+    <strong>
+      <p>The header file iostream must be included to make use of the input/output
+        (cin/cout) operators.</p>
+    </strong>
+    <ul>
+      <b>
+        <li>Standard Output (cout)</li>
+      </b>
+      <p>By default, the standard output of a program points at the screen. So with the
+        cout operator and the “insertion” operator (<<) you can print a message onto the screen.</p>
+          <pre class="language-c++"><code>
+  #include&lt;iostream&gt;
+
+ using namespace std;
+
+ int main()
+ {
+ cout << "Hello World!";
+ return 0;
+ }
+</code>
+</pre>
+          <b>
+            <li>Standard input (cin)</li>
+          </b>
+          <p>In most cases the standard input device is the keyboard. With the cin and >>
+            operators it is possible to read input from the keyboard.</p>
+          <pre class="language-c++"><code>#include&lt;iostream&gt;
+using namespace std;
+ int main()
+ {
+ char ch;
+ cout << "Press a character and press return: ";
+ cin >> ch;
+ cout << ch;
+ return 0;
+ }</code></pre>
+          <p><strong>Note: </strong>The input is processed by cin after the return key is pressed.</p>
+          <p>The cin operator will always return the variable type that you use with cin. So
+            if you request an integer you will get an integer and so on. This can cause an
+            error when the user of the program does not return the type that you are
+            expecting. (Example: you ask for an integer and you get a string of characters.)</p>
+          <p>The cin operator is also chainable. For example:</p>
+          <pre class="language-c++"><code>cin >> X >> Y;</code>
+ </pre>
+          <p>In this case the user must give two input values, that are separated by any
+            valid blank separator (tab, space or new-line).</p>
+    </ul>
+    <br><br>
+    <hr />
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="/snippet/tut2.html">Next Tutorial</a></li>
+  </ul>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+  
+  <!--footer starts from here-->
+
+<footer class="footer">
+
+
+
+<!--
+<div class=" col-sm-4 col-md  col-6 col">
+<h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+
+<ul class="footer_ul_amrc">
+<li><a href="#">Basic C++</a></li>
+<li><a href="#">Operators In C++</a></li>
+<li><a href="#">Decesion Making In C++</a></li>
+
+</ul>
+
+</div> -->
+
+
+<div class="container">
+
+<!--foote_bottom_ul_amrc ends here-->
+<p class="text-center">Copyright @2020-2021 | All Right Reserved <a href="#"></a></p>
+
+<ul class="social_footer_ul">
+<li><a href="https://github.com/c4desnippet/c4desnippet/blob/main/README.md"><i class="fab fa-github"></i></a></li>
+<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+<li><a href="https://www.instagram.com/akh4re/"><i class="fab fa-instagram"></i></a></li>
+</ul>
+<!--social_footer_ul ends here-->
+</div>
+
+</footer>
+    
+  <!-- Optional JavaScript; choose one of the two! -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+
+</html>

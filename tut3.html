@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/icon.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <title> Code Snippet</title>
+  <link rel="stylesheet" href="prism.css">
+  <script src="prism.js"></script>
+</head>
+<style type="text/css" media="all">
+  /*footer*/
+  .col_white_amrc {
+    color: #FFF;
+  }
+
+  footer {
+    width: 100%;
+    background-color: #263238;
+    min-height: 250px;
+    padding: 10px 0px 25px 0px;
+
+  }
+
+  .pt2 {
+    padding-top: 40px;
+    margin-bottom: 20px;
+
+  }
+
+  footer p {
+    font-size: 13px;
+    color: #CCC;
+    padding-bottom: 0px;
+    margin-bottom: 8px;
+
+  }
+
+  .mb10 {
+    padding-bottom: 15px;
+
+  }
+
+  .footer_ul_amrc {
+    margin: 0px;
+    list-style-type: none;
+    font-size: 14px;
+    padding: 0px 0px 10px 0px;
+    text-decoration: none;
+  }
+
+  .footer_ul_amrc li {
+    padding: 0px 0px 5px 0px;
+
+
+  }
+
+  .footer_ul_amrc li a {
+    color: #C8D6FF;
+
+  }
+
+  .footer_ul_amrc li a:hover {
+    color: #27FFD5;
+
+  }
+
+  .fleft {
+    float: left;
+
+  }
+
+  .padding-right {
+    padding-right: 10px;
+  }
+
+  .footer_ul2_amrc {
+    margin: 0px;
+    list-style-type: none;
+    padding: 0px;
+
+  }
+
+  .footer_ul2_amrc li p {
+    display: table;
+  }
+
+  .footer_ul2_amrc li a:hover {
+    text-decoration: none;
+  }
+
+  .footer_ul2_amrc li i {
+    margin-top: 5px;
+  }
+
+  .bottom_border {
+    border-bottom: 1px solid #323f45;
+    padding-bottom: 20px;
+  }
+
+  .foote_bottom_ul_amrc {
+    list-style-type: none;
+    padding: 0px;
+    display: table;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+
+  }
+
+  .foote_bottom_ul_amrc li {
+    display: inline;
+  }
+
+  .foote_bottom_ul_amrc li a {
+    color: #999;
+    margin: 0 12px;
+  }
+
+  .social_footer_ul {
+    display: table;
+    margin: 15px auto 0 auto;
+    list-style-type: none;
+  }
+
+  .social_footer_ul li {
+    padding-left: 20px;
+    padding-top: 10px;
+    float: left;
+  }
+
+  .social_footer_ul li a {
+    color: #CCC;
+    border: 1px solid #CCC;
+    padding: 8px;
+    border-radius: 50%;
+  }
+
+  .social_footer_ul li i {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+  }
+
+  /*footer end*/
+  table {
+    border-collapse: collapse;
+
+  }
+
+  thead th {
+    border: 0.2px solid #9D9D9D;
+  }
+
+  table,
+  td {
+    border: 0.2px solid #9F9FA7;
+  }
+
+  .dark {
+
+    background-color: #E9E9E9;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  /*CSS table oprator and operations*/
+  .table2 {
+    border-collapse: collapse;
+    border: 0.5px solid #B8B9BF;
+
+
+  }
+
+  td {
+    border-bottom: 1px solid #9E9E9E;
+  }
+
+  .dark2 {
+
+    background-color: #F2F4FF;
+  }
+
+  .tdeta {
+    border: 0.6px solid #BFBFBF;
+    border-radius: 4px;
+  }
+
+  .code {
+    background: #000000;
+    color: #E7EDFF;
+  }
+
+  .themdl {
+    background: #FBFBFF;
+    border: 1px solid #B7B7B7;
+    height: 240;
+    
+    border-radius: 5px;
+    justify-content: center;
+    font-size: 1em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-left-color: #847BFF;
+    border-left-width: 5px;
+
+  }
+
+  .imphead {
+    color: #565656;
+    font-size: 1.5em;
+   font-weight: bolder;
+  }
+  .syntax{
+    background: #F1F1F1;
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Code Snippet</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="/snippet/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/snippet/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="ß">Snippets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/snippet/contact.html">Contact</a>
+          </li>
+        </ul>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--botton modal-->
+  <!-- Button trigger modal -->
+  <div class="container mt-4">
+    <h1>Decision Making In C++</h1>
+    <br>
+    <p>Decision making is about deciding the order of execution of statements based on certain conditions or repeat a group of statements until certain specified conditions are met.</p>
+<ul type="square">
+  <li>If-Else Statement</li>
+  <li>Conditional Operator Statement</li>
+    <li>Switch Statement</li>
+</ul>
+<big class="imphead">1) If-Else Statement</big>
+<p>The if statement implemented in different forms depending on the complexity of conditions to be tested.</p>
+<ol>
+  <li>if-else statement</li>
+  <li>Nested if....else statement</li>
+  <li>if-esle if Ladder</li>
+</ol>
+
+<br><hr><br>
+<h5>if-else statement</h5>
+<i>The syntax of if...else statement:</i>
+<pre class="syntax">if(expression)
+{
+   // statement-if-expression-true;
+}
+else
+{
+   // statement-if-expression-false;
+}</pre>
+<p>If the 'expression' is true or returns true, then the 'if block' will get executed, else expression is false then the if block will be skipped and else block will be executed.</p>
+
+<b style="font-size: 1.2em;">Example</b>
+<pre class="language-c++"><code>//Program to Check Whether a Number is Even or Odd
+#include&lt;iostream>
+using namespace std;
+
+int main(){
+    int num;
+    cout<<"Enter your Number : "; 
+    cin>>num;
+    if(num%2==0){
+      cout<<"your number is even"<&lt;endl;
+    }
+    else{
+      cout<<"your number is odd"<&lt;endl;
+    }
+    return 0;
+}</code></pre>
+<i style="font-size: 1.1em;">program output</i>
+<pre class="code"> Enter your Number :34
+ your number is even<br></pre>
+<br><hr><br>
+<h5>Nested if....else statement</h5>
+<p>The nested if else statement are used to specify conditions within conditions.</p>
+<i>Syntax</i>
+<pre class="syntax">// outer if statement
+if (condition1) {
+    // statement
+
+    // inner if statement
+    if (condition2) {
+        // statement
+    }
+    // inner else statement
+    else{
+       //statement 
+    }
+    
+ }   
+// outer else statement    
+else{ 
+    //statement
+  }
+</pre>
+<p>A nested if in C++ is an if statement that is the target of another if statement. Nested if statements mean an if statement inside another if statement. C++ allow us to nested if statements within if statements, i.e, we can place an if statement inside another if statement. </p>
+<b style="font-size: 1.2em;">Example</b>
+<pre class="language-c++"><code>// program to compare the two values 
+#include&lt;iostream>
+using namespace std ;
+
+int main () {
+ int a, b;
+ cout<<"Enter the value of a\n";
+ cin >> a;
+ cout<<"Enter the value of b\n";
+ cin >> b;
+ 
+  // outer if statement
+  if ( a != b ) {
+    // inner if statement
+       if ( a > b ) {
+         cout << "a is greater than b" ;
+          }
+    // inner else statement
+       else {
+         cout << "b is greater than a" ;
+         }
+ } 
+ //outer else statement
+ else {
+     cout<<"both values are equal";
+ }
+ return 0 ;
+}</code>
+</pre>
+<i style="font-size: 1.1em;">program output</i><pre class="code"> Enter the value of a
+ 4
+ Enter the value of b
+ 2
+ a is greater than b</pre>
+
+<br>
+    <div class="themdl">
+      <ul>
+        <p><b>Note: </b>As you can see, nested if...else makes your logic complicated. If possible, you should always try to avoid nested if...else.</p>
+        <p></p>
+      </ul>
+    </div>
+<br><hr><br>
+<h5>if-esle if Ladder</h5>
+<p>The if...else statement is used to execute a block of code among two alternatives. However, if we need to make a choice between more than two alternatives, we use the if...else if...else ladder.</p>
+<b>syntax</b>
+<pre class="syntax"> if (expression 1) {
+     // statement
+ }
+ else if (expression 2){
+     //statement
+ }
+ else if (expression 2){
+     //statement
+ }
+ else {
+     // statement
+ }</pre>
+    <div class="themdl">
+      <ul>
+        <b>Note:</b>    
+        <p>There can be more than one else if statement but only one if and else statements.</p>
+      </ul>
+    </div>
+    <br>
+  <b style="font-size: 1.2em;">Example</b>  
+<pre class="language-c++"><code>#include &lt;iostream>
+using namespace std ;
+
+int main () {
+ int a , b ;
+ cout<<"Enter the value of a";
+ cin >> a;
+ cout<<"Enter the value of b";
+ cin >> b;
+ 
+ if ( a == b ) {
+ cout << "Both the numbers are equal";
+ }
+ else if ( a > b ) {
+ cout << "a is greater than b";
+ }
+ else {
+ cout << "b is greater than a" ;
+ }
+ 
+  return 0;
+}</code>
+</pre>
+<i style="font-size: 1.1em;">program output</i><pre class="code"> Enter the value of a : 4
+ Enter the value of b : 6
+ b is greater than a</pre>
+<p>In this program,take tow number from the user. then use the if...else if...else ladder to check whether the number is greater than or equals to.
+<br>
+If the value of a and b are equal then the code inside the if block is executed. If the a is greater than b, the code inside the else if block is executed. Otherwise, the code inside the else block is executed.</p><br><hr><br>
+<big class="imphead">2) Conditional Operator Statement</big>
+<p>In C++, the conditional operator (also known as the ternary  operator) can be used to replace if...else in certain scenarios.</p>
+<p>A ternary operator evaluates the test condition and executes a block of code based on the result of the condition.</p>
+<b>syntax</b><pre class="syntax">
+condition ? expression1 : expression2; 
+</pre>
+<p>Here, condition is evaluated and</p>
+<ul>
+<li>if condition is true, expression1 is executed.</li>
+<li>And, if condition is false, expression2 is executed.</li>
+ </ul>
+<p>The ternary operator takes 3 operands (condition, expression1 and expression2). Hence, the name <b>ternary operator</b>.</p>
+<b style="font-size: 1.2em;">Example</b>  
+<pre class="language-c++"><code>#include &lt;iostream>
+#include &lt;string>
+using namespace std;
+
+int main() {
+  double marks;
+
+  // take input from users
+  cout << "Enter your marks: ";
+  cin >> marks;
+
+  // ternary operator checks if
+  // marks is greater than 40
+  string result = (marks >= 40) ? "passed" : "failed";
+
+  cout << "You " << result << " the exam.";
+
+  return 0;
+}</code></pre>
+ 
+<i style="font-size: 1.1em;">program output</i><pre class="code">
+ Enter your marks: 80
+ You passed the exam.
+</pre>
+<p>Suppose the user enters 80. Then, the condition marks >= 40 evaluates to true. Hence, the first expression "passed" is assigned to result.</p>
+ 
+<br><div class="themdl">
+      <ul>
+        <b>Note:</b>    
+        <p> We should only use the ternary operator if the resulting statement is short.</p>
+      </ul>
+    </div>
+
+
+<br><hr><br>
+<big class="imphead">3) Switch Statement</big>
+
+<p>Switch case statement is used when we have multiple conditions and we need to perform different action based on the condition. When we have multiple conditions and we need to execute a block of statements when a particular condition is satisfied. In such case either we can use lengthy if..else-if statement or switch case.</p>
+<b> Syntax</b>
+<pre class="syntax">switch (expression)
+{
+    case 1:
+    // statement;
+        break;
+    case 2:
+    // statement;
+        break;
+    default: 
+    // code to be executed if expression doesn't match any cases
+}</pre>
+
+  <p>The above parameters are explained below:</p>
+<ol>
+<li>expression: This is the expression for which comparison is to be made.</li>
+<li>Case: There are many case statements. Each compares the expression with a different value.</li>
+<li>Break: This keyword prevents execution from continuing to the next case statement.</li>
+<li>Default: This is optional. It states what should be done, the value of the expression did not match any case.</li>
+</ol>
+
+<b style="font-size: 1.2em;">Example</b>  
+
+<pre class="language-c++"><code>#include &lt;iostream>  
+using namespace std;
+
+int main() {
+  int rating;
+  cout << "Enter Your Rating From 1 To 5: ";
+  cin >> rating;
+  switch (rating)
+  {
+  case 1: 
+    cout << "Your Rating Is One,";
+     break;
+  case 2: 
+    cout << "Your Rating Is Two,"; 
+     break;
+  case 3: 
+    cout << "Your Rating Is Three";
+     break;
+  case 4: 
+    cout << "Your Rating Is Four";
+      break;
+  case 5: 
+    cout << "Your Rating Is Five"; 
+     break;
+  default: 
+    cout << "Opps, Invalid Rating !"; 
+    break;
+  }
+}</code></pre>
+
+<i>Output 1</i>
+<pre class="code"> Enter Your Rating From 1 To 5: 5
+ Your Rating Is Five</pre>
+<p>if we entered wrong rating then the default statement will be executed. as shown in output 2</p>
+<i>Output 2</i>
+<pre class="code"> Enter Your Rating From 1 To 5: 6
+ Opps, Invalid Rating !</pre>
+
+<br><div class="themdl">
+      <ul>
+        <b>Note:</b>    
+        <p>The expression used in a switch statement must have an integral or enumerated type, or be of a class type in which the class has a single conversion function to an integral or enumerated type.</p>
+      </ul>
+    </div>
+
+<br><hr>
+
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="/snippet/tut2.html">Previous</a></li>
+  </ul>
+</nav>
+
+<br>
+
+
+
+
+
+
+  </div>
+  <!--footer starts from here-->
+
+<footer class="footer">
+
+
+
+<!--
+<div class=" col-sm-4 col-md  col-6 col">
+<h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+
+<ul class="footer_ul_amrc">
+<li><a href="#">Basic C++</a></li>
+<li><a href="#">Operators In C++</a></li>
+<li><a href="#">Decesion Making In C++</a></li>
+
+</ul>
+
+</div> -->
+
+
+<div class="container">
+
+<!--foote_bottom_ul_amrc ends here-->
+<p class="text-center">Copyright @2020-2021 | All Right Reserved <a href="#"></a></p>
+
+<ul class="social_footer_ul">
+<li><a href="https://github.com/c4desnippet/c4desnippet/blob/main/README.md"><i class="fab fa-github"></i></a></li>
+<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+<li><a href="https://www.instagram.com/akh4re/"><i class="fab fa-instagram"></i></a></li>
+</ul>
+<!--social_footer_ul ends here-->
+</div>
+
+</footer>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+
+</html>
