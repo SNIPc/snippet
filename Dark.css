@@ -180,7 +180,7 @@ section.dark .section-title::after{
   padding: 40px 20px;
   color: #fff;
   cursor: pointer;
-  box-shadow: 0 6px 17px 0 #9AFFF5;
+  box-shadow: 0 3px 12px 0 #9AFFF5;
   transition: .3s linear;
 }
 
